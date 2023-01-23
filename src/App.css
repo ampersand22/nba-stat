@@ -1,38 +1,108 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1b4353;
+  background-color: #f6f7f8;
+}
+
+.stat-box {
+  width: 100%;
+  min-height: 80vh;
+  margin-left: 20em;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+  background-color: black;
+  
+}
+
+.tab-teams, .tab-news, .tab-score, .tab-stats {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 50px;
+  /* border-right: 5px solid #ccc; */
+  cursor: pointer;
+}
+
+
+
+
+.teams-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.team-div {
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.team-div:hover {
+  transform: scale(1.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.team-div > img {
+  width: 250px;
+}
+
+
+.leaders-container {
+  width: 100%;
+}
+
+.leader-stats {
+  width: 100%;
+  display: grid;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  text-align: left;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 1em;
+}
+
+.athlete-name {
+  max-width: 90%;
+  max-width:fit-content;
+}
+
+.list-item {
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .input { width: 80%; }
+}
+
+.footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #000000;
+  color: #ffffff;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
