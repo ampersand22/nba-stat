@@ -3,6 +3,7 @@ import axios from 'axios'
 import './Scoreboard.css'
 import Leaders from './Leaders'
 import { Card, CardHeader, CardBody, CardFooter, SimpleGrid, Button, Grid, GridItem } from '@chakra-ui/react'
+import Football from './Football'
 
 
 const Scoreboard = () => {
@@ -81,6 +82,7 @@ const Scoreboard = () => {
             
         </div>
     </div>
+    
   )
 }
 
