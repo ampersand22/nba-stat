@@ -66,14 +66,14 @@ const Content = () => {
                     <h2 style={{color: showNews ? '#c20114' : null }}>News</h2>
                 </div> */}
                 <div className="tab-stats" onClick={() => {showStatsToggle()}}>
-                    <h2 style={{color: showStats ? '#c20114' : null }}>Stats</h2>
+                    <h2 style={{color: active ? '#c20114' : null }}>Stats</h2>
                 </div>
             </div>
             <div className='main-content'>
-                { active ? <Scoreboard /> : null}
+                {/* { active ? <Scoreboard /> : null} */}
                 { showTeams ? <Teams teamData={teamData}/> : null}
                 { showNews ? <News /> : null}
-                { showStats ? <Stats teamData={teamData}/> : null}
+                { active ? <Stats teamData={teamData}/> : null}
 
             </div>
         </div>
