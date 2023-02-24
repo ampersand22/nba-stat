@@ -56,7 +56,7 @@ const Content = () => {
     return (
         <div className="content-container">
             <div className="tabs">
-                <div className="tab-score" onClick={() => {activeToggle()}}>
+                {/* <div className="tab-score" onClick={() => {activeToggle()}}>
                     <h2 style={{color: active ? '#c20114' : null }}>Scoreboard</h2>
                 </div>
                 <div className="tab-teams" onClick={() => {showTeamsToggle()}}>
@@ -64,7 +64,7 @@ const Content = () => {
                 </div>
                 <div className="tab-news" onClick={() => {showNewsToggle()}}>
                     <h2 style={{color: showNews ? '#c20114' : null }}>News</h2>
-                </div>
+                </div> */}
                 <div className="tab-stats" onClick={() => {showStatsToggle()}}>
                     <h2 style={{color: showStats ? '#c20114' : null }}>Stats</h2>
                 </div>
