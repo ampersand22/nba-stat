@@ -66,7 +66,7 @@ const Content = () => {
                     <h2 style={{color: showNews ? '#c20114' : null }}>News</h2>
                 </div> */}
                 <div className="tab-stats" onClick={() => {showStatsToggle()}}>
-                    <h2 style={{color: active ? '#c20114' : null }}>Stats</h2>
+                    <h2 style={{color: active ? '#c20115' : null }}>Stats</h2>
                 </div>
             </div>
             <div className='main-content'>
